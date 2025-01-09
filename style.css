@@ -67,6 +67,17 @@ nav ul {
 nav ul li {
     margin-right: 20px; /* Add spacing between navigation items */
 }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Combine transitions for smoother effect */
+}
+
+nav ul li a:hover {
+    color: #8B3535; /* Burgundy */
+    text-decoration: underline; 
+    font-size: 1.06em; /* Slightly magnify the text */
+}
 
 nav a {
     color: #fff;
@@ -196,7 +207,7 @@ nav a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 300px; /* Reduced maximum width for narrower cards */
     margin: 10px; /* Add margin for spacing between cards */
-
+    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center; /* This centers the entire card content vertically */
@@ -279,5 +290,37 @@ footer {
     text-align: center;
     color: #fff; /* Keep copyright text white */
     margin-top: 2rem;
+}
+
+/* about us section */
+.aboutus {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+}
+
+.aboutus .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50rem; /* Allow cards to wrap to the next line */
+}
+
+.about-card {
+    background-color: #fff;
+    padding: 20px; /* Reduced padding for narrower cards */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Reduced maximum width for narrower cards */
+    margin: 10px; /* Add margin for spacing between cards */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* This centers the entire card content vertically */
+    justify-content: center; /* This centers the image horizontally */ 
+}
+
+.aboutus h2 {
+    text-align: center; /* Center the headline */
+    margin-bottom: 20px; /* Add some space below the headline */
 }
 /* Add more CSS styles as needed */
