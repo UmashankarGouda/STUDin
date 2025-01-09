@@ -1,2 +1,2 @@
 # STUDin
-asudhaslda
+Alumni Association Platform
