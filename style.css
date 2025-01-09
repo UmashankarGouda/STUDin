@@ -1,0 +1,283 @@
+/* Add your CSS styles here to control the appearance of the page */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Define custom font families */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('path/to/PlayfairDisplay-Regular.woff2') format('woff2'),
+         url('path/to/PlayfairDisplay-Regular.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('path/to/Inter-Regular.woff2') format('woff2'),
+         url('path/to/Inter-Regular.woff') format('woff');
+  }
+  
+  /* Use the font families in your styles */
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Add styles for header, hero, statistics, success-story, and footer sections */
+
+.btn {
+    background-color: #8B3535;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.btn:hover {
+    background-color: #660000;
+}
+
+header {
+    background-color: #0A2342; /* Example background color */
+    color: #fff;
+    padding: 8px 0; 
+}
+
+header .container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space between logo and navigation/buttons */
+    align-items: center; /* Vertically center elements */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make navigation items horizontal */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add spacing between navigation items */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo i {
+    font-style: normal;
+    font-weight: bold;
+    color: #fff;
+}
+.buttons {
+    display: flex; /* Make buttons horizontal */
+}
+
+.buttons a {
+    margin-left: 10px;
+    text-decoration: none; /* Add spacing between buttons */
+}
+
+.hero {
+    height: 700px;
+    background-image: url('environment.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start; /* Align text to left */
+    padding-left: 50px; /* Add padding for better spacing */
+    color: #fff;
+    padding-bottom: 50px;
+     /* Darken the background */
+     position: relative;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+    position: relative; /* Position the content relative to itself */
+    z-index: 1; /* Ensure content is above the overlay */
+    padding-left: 50px; /* Add padding for spacing */
+    color: #fff; 
+}
+
+.hero h1 {
+    font-size: 4rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1rem; /* Adjust font size as needed */
+}
+.hero-content a{
+    text-decoration: none;
+}
+
+
+.statistics {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 30px 0; 
+    /* margin-top: 50px; */
+}
+
+.statistics .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-card {
+    background-color: #fff; /* White card background */
+    padding: 30px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Adjust for spacing between cards */
+    margin: 0 10px;
+     /* Add 10px margin on each side of the card */
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Optional: Make the card content vertical */
+        /* ... other styles ... */
+   
+}
+
+.stat-card i {
+    font-size: 2.5em;
+    color: #000000; /* Blue icon color */
+    margin-bottom: 15px;
+}
+
+.stat-card span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.stat-card p {
+    margin-top: 10px;
+}
+
+.success-story {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+}
+
+.success-story .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+.success-card {
+    background-color: #fff;
+    padding: 20px; /* Reduced padding for narrower cards */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Reduced maximum width for narrower cards */
+    margin: 10px; /* Add margin for spacing between cards */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the entire card content vertically */
+    justify-content: center; /* This centers the image horizontally */ 
+}
+
+.success-card img {
+    max-height: 200px; /* Set a maximum height for the images */
+    width: auto; 
+    object-fit: cover; 
+    /* Ensure the image covers the entire height and crops if necessary */
+    margin-bottom: 15px;
+}
+
+.success-card p {
+    margin-bottom: 10px;
+    font-size: 0.9em; /* Slightly smaller font size for narrower cards */
+}
+.success-story h2 {
+    text-align: center; /* Center the headline */
+    margin-bottom: 20px; /* Add some space below the headline */
+}
+/* icons */
+
+footer {
+    background-color: #001f3f; /* Navy Blue */
+    color: #fff; 
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem; 
+}
+
+.footer-column:first-child { 
+    flex: 1; 
+}
+
+.footer-column:last-child { 
+    flex: 0.25; 
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h5 {
+    font-size: 1.2rem; /* Increase heading font size */
+    color: #fff; /* Set heading color to white */
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7); /* Lighter shade of white */
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    transition: color 0.3s ease;
+}
+
+.footer-column i {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.7); /* Lighter shade of white */
+}
+
+
+.footer-column p:hover {
+    color: #fff; 
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2); /* Change color to white on hover */
+}
+.copyright {
+    text-align: center;
+    color: #fff; /* Keep copyright text white */
+    margin-top: 2rem;
+}
+/* Add more CSS styles as needed */
